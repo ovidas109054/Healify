@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Exclude DB from being uploaded to Google cloud -->
+        <exclude domain="database" path="healify_db"/>
+    </cloud-backup>
+    <device-transfer>
+        <!-- Exclude DB from being transferred to other devices via ADB or cable -->
+        <exclude domain="database" path="healify_db"/>
+    </device-transfer>
+</data-extraction-rules>

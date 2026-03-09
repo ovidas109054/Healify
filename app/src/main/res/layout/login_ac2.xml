@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context=".Login_Ac2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:src="@drawable/health" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Healify"
+            android:textAlignment="center"
+            android:textColor="#07A996"
+            android:textSize="44sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Health for everyone"
+            android:textAlignment="center"
+            android:textColor="#444444"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="50dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:indeterminate="false"
+            android:progress="66"
+            android:progressTint="#07A996" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="24dp"
+            android:text="Who are you?"
+            android:textColor="#555555"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btnPatient"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"    android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:drawableTop="@drawable/patient"
+                android:drawablePadding="8dp"
+                android:text="PATIENT (রোগী)"
+                android:gravity="center"
+                android:backgroundTint="#F3F3F3"
+                android:textSize="16sp"
+                android:textColor="#07A996"
+                android:padding="16dp"
+                android:textStyle="bold"/>
+
+
+
+            <Button
+                android:id="@+id/btnDoctor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"    android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:drawableTop="@drawable/doctor"
+                android:drawablePadding="8dp"
+                android:text="Doctor(ডাক্তার)"
+                android:gravity="center"
+                android:backgroundTint="#F3F3F3"
+                android:textSize="16sp"
+                android:textColor="#07A996"
+                android:padding="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btnHospital"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#F3F3F3"
+                android:drawableTop="@drawable/hospital"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Hospital
+                (হাসপাতাল)"
+                android:textColor="#07A996"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnMedicn_ltd"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:drawableTop="@drawable/syringe"
+                android:drawablePadding="8dp"
+                android:text="Medicin ltd.(ঔষধ)"
+                android:gravity="center"
+                android:backgroundTint="#F3F3F3"
+                android:textSize="16sp"
+                android:textColor="#07A996"
+                android:padding="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="&lt; Back"
+                android:backgroundTint="#07A996"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="Next >"
+                android:backgroundTint="#07A996"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

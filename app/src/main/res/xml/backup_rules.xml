@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Exclude the encrypted database from cloud backups to prevent leakage -->
+    <exclude domain="database" path="healify_db"/>
+    <exclude domain="database" path="healify_db-shm"/>
+    <exclude domain="database" path="healify_db-wal"/>
+</full-backup-content>

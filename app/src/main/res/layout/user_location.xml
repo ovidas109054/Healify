@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context=".UserLocation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:src="@drawable/health" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Healify"
+            android:textAlignment="center"
+            android:textColor="#07A996"
+            android:textSize="44sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Health for everyone"
+            android:textAlignment="center"
+            android:textColor="#444444"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="50dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:indeterminate="false"
+            android:progress="75"
+            android:progressTint="#07A996"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="18dp"
+            android:text="Your address:"
+            android:textColor="#555555"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Division:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#555555"
+            android:paddingStart="24dp"/>
+        <Spinner
+            android:id="@+id/spndivision"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/rounded_input"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:entries="@array/Division"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select District:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#555555"
+            android:paddingStart="24dp"/>
+        <Spinner
+            android:id="@+id/spndistrict"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/rounded_input"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:entries="@array/Division"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Upazila / Thana:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#555555"
+            android:paddingStart="24dp"/>
+        <Spinner
+            android:id="@+id/spnUpazila"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/rounded_input"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:entries="@array/Division"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Postal Code:"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:paddingStart="20dp"
+            android:textColor="#555555"/>
+
+        <EditText
+            android:id="@+id/edtPostalCode"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/rounded_input"
+            android:hint="1234"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/userBack"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="&lt; Back"
+                android:backgroundTint="#07A996"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/btnusernext"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="Next >"
+                android:backgroundTint="#07A996"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context=".DoctorLogin_Ac_1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/health" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Healify"
+            android:textAlignment="center"
+            android:textColor="#07A996"
+            android:textSize="44sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Health for everyone"
+            android:textAlignment="center"
+            android:textColor="#444444"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="50dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:indeterminate="false"
+            android:progress="66"
+            android:progressTint="#07A996" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name:"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:paddingStart="24dp"
+            android:textColor="#555555"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+        <EditText
+            android:id="@+id/DocName"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/rounded_input"
+            android:hint="Enter your name"
+            android:inputType="textPersonName" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Graduation Year:"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:paddingStart="24dp"
+            android:textColor="#555555"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+        <EditText
+            android:id="@+id/edtGraduationyear"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/rounded_input"
+            android:hint="2000"
+            android:inputType="number"
+            android:maxLength="4"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="College name:"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:paddingStart="24dp"
+            android:textColor="#555555"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+        <EditText
+            android:id="@+id/edtcollogename"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/rounded_input"
+            android:hint="abc medical college"
+            android:inputType="text" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BMDC / Registration Number:"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:paddingStart="24dp"
+            android:textColor="#555555"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+        <EditText
+            android:id="@+id/edtBMDC"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/rounded_input"
+            android:hint="123456"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medical Council Name:"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:paddingStart="24dp"
+            android:textColor="#555555"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+        <EditText
+            android:id="@+id/edt"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/rounded_input"
+            android:hint="abc def"
+            android:inputType="text" />
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
