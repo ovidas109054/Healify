@@ -47,7 +47,7 @@ public class Wellcome_Ac4 extends AppCompatActivity {
 
         // Updated button to navigate to DashboardActivity (the real app home)
         btnDashboard.setOnClickListener(v -> {
-            startActivity(new Intent(this, DashboardActivity.class));
+            startActivity(new Intent(this, Patient_Dash.class));
         });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {

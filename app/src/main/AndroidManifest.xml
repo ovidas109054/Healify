@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App01">
         <activity
+            android:name=".Doc_Desh"
+            android:exported="false" />
+        <activity
+            android:name=".Patient_Dash"
+            android:exported="false" />
+        <activity
             android:name=".UserLocation"
             android:exported="false" />
         <activity
@@ -34,7 +40,7 @@
             android:name=".Login_Ac2"
             android:exported="false" />
         <activity
-            android:name=".DashboardActivity"
+            android:name=".Patient_Dashboard"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

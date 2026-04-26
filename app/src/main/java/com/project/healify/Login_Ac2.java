@@ -71,7 +71,13 @@ public class Login_Ac2 extends AppCompatActivity {
             if (selectedRole.equals("Patient")) {
                 startActivity(new Intent(this, UserLocation.class));
             } else {
-                Toast.makeText(this, "Only Patient flow is available", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Only Patient & Doctor flow is available", Toast.LENGTH_SHORT).show();
+            }
+
+            if (selectedRole.equals("Doctor")) {
+                startActivity(new Intent(this, DoctorLogin_Ac_1.class));
+            } else {
+                Toast.makeText(this, "Only Patient & Doctor flow is available", Toast.LENGTH_SHORT).show();
             }
         });
 
